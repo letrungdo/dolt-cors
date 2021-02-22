@@ -1,14 +1,16 @@
 {
-  "name": "learn-starter",
+  "name": "dolt-cors",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
-    "next": "^10.0.0",
+    "cors-anywhere": "^0.4.3",
+    "cross-env": "^7.0.2",
+    "next": "latest",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   }
